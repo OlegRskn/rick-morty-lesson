@@ -6,10 +6,11 @@ export const useCharacters = (ids) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    if (!ids || ids.length === 0) return;
     setIsLoading(true);
     fetchCharacters(ids).then((data) => {
+      Array.isArray(data) ? setCharacters(data) : setCharacters([data]);
       console.log(data);
-      setCharacters(data);
       setIsLoading(false);
     });
   }, [ids]);
