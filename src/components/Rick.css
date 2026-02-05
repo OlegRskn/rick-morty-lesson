@@ -60,3 +60,15 @@ body {
   padding: 10px;
   overflow: hidden;
 }
+
+.list-title {
+  font-size: 24px;
+  color: #dde6ed;
+  margin: 20px 0 10px 0;
+}
+
+.list {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}

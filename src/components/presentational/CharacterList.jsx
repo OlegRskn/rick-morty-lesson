@@ -7,6 +7,7 @@ export const CharacterList = ({ ids }) => {
   if (isLoading) {
     return <div className="loading">Загрузка...</div>;
   }
+
   return (
     <div className="characters-container">
       {characters.map((character) => (
