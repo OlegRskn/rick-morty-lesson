@@ -5,9 +5,9 @@ import "../Rick.css";
 export const List = () => {
   return (
     <div className="list">
-      <span className="list-title">Locations</span>
+      <h1 className="list-title">Locations</h1>
       <LocationsList />
-      <span className="list-title">Episodes</span>
+      <h1 className="list-title">Episodes</h1>
       <EpisodesList />;
     </div>
   );
